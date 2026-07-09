@@ -579,3 +579,241 @@ window.addEventListener("load", () => {
 });
 
 // PATCH_V4_FLOATING_HEADERS_END
+
+// PATCH_V7_GROUP_FINAL_LAYOUT_START
+
+function groupAwardHTMLV7(row) {
+  const level = row.award_level || "basic";
+
+  if (level === "gold") {
+    return `<span class="award-icon-only award-gold" title="جایگاه اول">🏆</span>`;
+  }
+
+  if (level === "silver") {
+    return `<span class="award-icon-only award-silver" title="جایگاه دوم">🥈</span>`;
+  }
+
+  if (level === "bronze") {
+    return `<span class="award-icon-only award-bronze" title="جایگاه سوم">🥉</span>`;
+  }
+
+  return `<span class="award-empty"></span>`;
+}
+
+function groupGradeHTMLV7(row) {
+  const grade = row.group_grade_percent;
+
+  if (grade === null || grade === undefined || grade === "") {
+    return `<span class="final-grade-pill">—</span>`;
+  }
+
+  return `<span class="final-grade-pill">${fmt.format(Number(grade))}٪</span>`;
+}
+
+function getMetricMeanV7(row, metricKey) {
+  const v = row?.indicators?.[metricKey]?.mean;
+  return v === null || v === undefined || v === "" ? null : Number(v);
+}
+
+function getMetricStdV7(row, metricKey) {
+  const v = row?.indicators?.[metricKey]?.std;
+  return v === null || v === undefined || v === "" ? null : Number(v);
+}
+
+function getFinalRankV7(row) {
+  const v = row?.final_rank_order;
+  return v === null || v === undefined || v === "" ? 999999 : Number(v);
+}
+
+function statBlockV7(indicator) {
+  return `
+    <div class="stat-cell">
+      <div class="stat-main">میانگین: ${val(indicator.mean)}</div>
+      <div class="stat-sub">انحراف معیار: ${val(indicator.std)}</div>
+    </div>
+  `;
+}
+
+/*
+  نسخه اصلاح‌شده جدول نتایج گروهی:
+  در حالت RTL، ستون‌هایی که در انتهای HTML می‌آیند، در سمت چپ جدول دیده می‌شوند.
+  بنابراین جایگاه و نمره گروهی بعد از سه شاخص آمده‌اند.
+*/
+async function initGroupStats() {
+  setupLogo();
+
+  const db = await loadJSON("data/group_statistics.json");
+  const originalRows = db.rows || [];
+  const tbody = byId("statsBody");
+
+  const table = tbody.closest("table");
+
+  if (table) {
+    table.classList.add("group-stats-table");
+    table.classList.add("group-final-table");
+    table.classList.add("group-final-table-v7");
+
+    const thead = table.querySelector("thead");
+
+    if (thead) {
+      thead.innerHTML = `
+        <tr>
+          <th>
+            <button class="sort-head active" data-sort="group">
+              گروه <span class="sort-icon">↑</span>
+            </button>
+          </th>
+
+          <th>
+            <button class="sort-head" data-sort="data_real">
+              اتکا به داده‌های واقعی <span class="sort-icon">↕</span>
+            </button>
+          </th>
+
+          <th>
+            <button class="sort-head" data-sort="presentation_quality">
+              کیفیت ارائه و کار تیمی <span class="sort-icon">↕</span>
+            </button>
+          </th>
+
+          <th>
+            <button class="sort-head" data-sort="persuasion">
+              قدرت متقاعدسازی و ارزیابی کلی <span class="sort-icon">↕</span>
+            </button>
+          </th>
+
+          <th>
+            <button class="sort-head" data-sort="final_rank">
+              جایگاه <span class="sort-icon">↕</span>
+            </button>
+          </th>
+
+          <th>
+            <button class="sort-head" data-sort="final_grade">
+              نمره گروهی از ۳۰٪ <span class="sort-icon">↕</span>
+            </button>
+          </th>
+        </tr>
+      `;
+    }
+  }
+
+  let sortKey = "group";
+
+  function sortRows(rows) {
+    const copied = [...rows];
+
+    if (sortKey === "group") {
+      copied.sort((a, b) => Number(a.group_number) - Number(b.group_number));
+      return copied;
+    }
+
+    if (sortKey === "final_rank" || sortKey === "final_grade") {
+      copied.sort((a, b) => {
+        const rankA = getFinalRankV7(a);
+        const rankB = getFinalRankV7(b);
+
+        if (rankA !== rankB) {
+          return rankA - rankB;
+        }
+
+        return Number(a.group_number) - Number(b.group_number);
+      });
+
+      return copied;
+    }
+
+    copied.sort((a, b) => {
+      const meanA = getMetricMeanV7(a, sortKey);
+      const meanB = getMetricMeanV7(b, sortKey);
+
+      if (meanA === null && meanB !== null) return 1;
+      if (meanA !== null && meanB === null) return -1;
+
+      if (meanA !== null && meanB !== null && meanB !== meanA) {
+        return meanB - meanA;
+      }
+
+      const stdA = getMetricStdV7(a, sortKey);
+      const stdB = getMetricStdV7(b, sortKey);
+
+      if (stdA === null && stdB !== null) return 1;
+      if (stdA !== null && stdB === null) return -1;
+
+      if (stdA !== null && stdB !== null && stdA !== stdB) {
+        return stdA - stdB;
+      }
+
+      return Number(a.group_number) - Number(b.group_number);
+    });
+
+    return copied;
+  }
+
+  function updateHeaderState() {
+    document.querySelectorAll(".sort-head").forEach(btn => {
+      const key = btn.dataset.sort;
+      btn.classList.toggle("active", key === sortKey);
+
+      const icon = btn.querySelector(".sort-icon");
+
+      if (!icon) return;
+
+      if (key === sortKey) {
+        icon.textContent = key === "group" ? "↑" : "↓";
+      } else {
+        icon.textContent = "↕";
+      }
+    });
+  }
+
+  function render() {
+    const rows = sortRows(originalRows);
+    tbody.innerHTML = "";
+
+    for (const row of rows) {
+      const i1 = row.indicators.data_real;
+      const i2 = row.indicators.presentation_quality;
+      const i3 = row.indicators.persuasion;
+
+      tbody.insertAdjacentHTML("beforeend", `
+        <tr>
+          <td class="group-name-cell">
+            <strong>${groupLabel(row.group)}</strong>
+            <br>
+            <small>${shortTopic(row.topic)}</small>
+          </td>
+
+          <td class="indicator-col">${statBlockV7(i1)}</td>
+          <td class="indicator-col">${statBlockV7(i2)}</td>
+          <td class="indicator-col">${statBlockV7(i3)}</td>
+
+          <td class="award-cell">
+            ${groupAwardHTMLV7(row)}
+          </td>
+
+          <td class="group-grade-cell">
+            ${groupGradeHTMLV7(row)}
+          </td>
+        </tr>
+      `);
+    }
+
+    updateHeaderState();
+
+    if (typeof setupFloatingTableHeadersV4 === "function") {
+      setTimeout(setupFloatingTableHeadersV4, 80);
+    }
+  }
+
+  document.querySelectorAll(".sort-head").forEach(btn => {
+    btn.addEventListener("click", () => {
+      sortKey = btn.dataset.sort;
+      render();
+    });
+  });
+
+  render();
+}
+
+// PATCH_V7_GROUP_FINAL_LAYOUT_END

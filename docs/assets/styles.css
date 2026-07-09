@@ -1054,3 +1054,164 @@ th {
   font-size: 18px;
 }
 /* PRIVACY_NOTE_CARD_END */
+
+/* PATCH_V7_GROUP_FINAL_LAYOUT_START */
+
+/* جدول جدید با همان سبک خط‌های قبلی */
+.group-final-table-v7 {
+  min-width: 1320px !important;
+}
+
+.group-final-table-v7 th,
+.group-final-table-v7 td {
+  vertical-align: middle !important;
+}
+
+/* عرض ستون‌ها */
+.group-final-table-v7 th:nth-child(1),
+.group-final-table-v7 td:nth-child(1) {
+  min-width: 220px !important;
+  width: 220px !important;
+}
+
+.group-final-table-v7 th:nth-child(2),
+.group-final-table-v7 th:nth-child(3),
+.group-final-table-v7 th:nth-child(4),
+.group-final-table-v7 td:nth-child(2),
+.group-final-table-v7 td:nth-child(3),
+.group-final-table-v7 td:nth-child(4) {
+  min-width: 255px !important;
+}
+
+.group-final-table-v7 th:nth-child(5),
+.group-final-table-v7 td:nth-child(5) {
+  min-width: 120px !important;
+  width: 120px !important;
+}
+
+.group-final-table-v7 th:nth-child(6),
+.group-final-table-v7 td:nth-child(6) {
+  min-width: 210px !important;
+  width: 210px !important;
+}
+
+/* حذف هر نوع خط جداکننده متفاوت از نسخه قبلی */
+.group-final-table-v7 th,
+.group-final-table-v7 td {
+  border-left: 2px solid rgba(48, 86, 211, 0.13) !important;
+  border-right: none !important;
+}
+
+.group-final-table-v7 th:last-child,
+.group-final-table-v7 td:last-child {
+  border-left: none !important;
+}
+
+/* خنثی کردن جداکننده‌های ویژه نسخه قبل */
+.group-final-table-v7 td:nth-child(3),
+.group-final-table-v7 th:nth-child(3),
+.group-final-table-v7 td:nth-child(4),
+.group-final-table-v7 th:nth-child(4) {
+  border-left: 2px solid rgba(48, 86, 211, 0.13) !important;
+  border-right: none !important;
+}
+
+/* خنثی کردن پس‌زمینه‌های متفاوت نسخه قبلی برای هماهنگی بیشتر */
+.group-final-table-v7 td {
+  background: white !important;
+}
+
+.group-final-table-v7 tr:hover td {
+  background: #f8fbff !important;
+}
+
+.group-name-cell small {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.award-cell,
+.group-grade-cell {
+  text-align: center !important;
+}
+
+/* فقط آیکون، بدون متن */
+.award-icon-only {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+  transition: 0.25s ease;
+}
+
+.award-icon-only:hover {
+  transform: translateY(-2px) scale(1.08);
+}
+
+.award-icon-only.award-gold {
+  background: linear-gradient(135deg, #fff7cc, #ffe08a);
+  box-shadow: 0 10px 24px rgba(180, 120, 0, 0.18);
+}
+
+.award-icon-only.award-silver {
+  background: linear-gradient(135deg, #ffffff, #e3e8f0);
+  box-shadow: 0 10px 24px rgba(100, 116, 139, 0.16);
+}
+
+.award-icon-only.award-bronze {
+  background: linear-gradient(135deg, #ffe9d6, #d99a62);
+  box-shadow: 0 10px 24px rgba(154, 78, 26, 0.16);
+}
+
+/* برای گروه‌های آخر هیچ چیزی نمایش داده نشود */
+.award-empty {
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+}
+
+.final-grade-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  min-height: 42px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(48, 86, 211, 0.12), rgba(124, 58, 237, 0.12));
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.group-final-table-v7 .stat-cell {
+  min-width: 230px !important;
+}
+
+.group-final-table-v7 .sort-head {
+  min-height: 38px;
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+  .group-final-table-v7 {
+    min-width: 1260px !important;
+  }
+
+  .award-icon-only {
+    width: 46px;
+    height: 46px;
+    font-size: 26px;
+  }
+
+  .final-grade-pill {
+    min-width: 76px;
+    font-size: 16px;
+  }
+}
+
+/* PATCH_V7_GROUP_FINAL_LAYOUT_END */

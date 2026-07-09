@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 23:07:22",
+  "generated_at": "2026-07-09 12:23:25",
   "indicators": {
     "data_real": "اتکا به داده‌های واقعی",
     "presentation_quality": "کیفیت ارائه و کار تیمی",
@@ -26,7 +26,12 @@
           "mean": 4.15,
           "std": 0.89
         }
-      }
+      },
+      "final_rank_order": 3,
+      "award_level": "gold",
+      "award_label": "جام طلایی",
+      "award_icon": "🏆",
+      "group_grade_percent": 30
     },
     {
       "group": "G2",
@@ -48,7 +53,12 @@
           "mean": 3.96,
           "std": 1.06
         }
-      }
+      },
+      "final_rank_order": 9,
+      "award_level": "bronze",
+      "award_label": "جام برنزی",
+      "award_icon": "🥉",
+      "group_grade_percent": 20
     },
     {
       "group": "G3",
@@ -70,7 +80,12 @@
           "mean": 3.74,
           "std": 0.92
         }
-      }
+      },
+      "final_rank_order": 12,
+      "award_level": "basic",
+      "award_label": "بدون جام",
+      "award_icon": "",
+      "group_grade_percent": 15
     },
     {
       "group": "G4",
@@ -92,7 +107,12 @@
           "mean": 3.92,
           "std": 1.04
         }
-      }
+      },
+      "final_rank_order": 11,
+      "award_level": "bronze",
+      "award_label": "جام برنزی",
+      "award_icon": "🥉",
+      "group_grade_percent": 20
     },
     {
       "group": "G5",
@@ -114,7 +134,12 @@
           "mean": 3.64,
           "std": 1.08
         }
-      }
+      },
+      "final_rank_order": 15,
+      "award_level": "basic",
+      "award_label": "بدون جام",
+      "award_icon": "",
+      "group_grade_percent": 15
     },
     {
       "group": "G6",
@@ -136,7 +161,12 @@
           "mean": 3.62,
           "std": 1.05
         }
-      }
+      },
+      "final_rank_order": 14,
+      "award_level": "basic",
+      "award_label": "بدون جام",
+      "award_icon": "",
+      "group_grade_percent": 15
     },
     {
       "group": "G7",
@@ -158,7 +188,12 @@
           "mean": 3.96,
           "std": 0.97
         }
-      }
+      },
+      "final_rank_order": 6,
+      "award_level": "silver",
+      "award_label": "جام نقره‌ای",
+      "award_icon": "🥈",
+      "group_grade_percent": 25
     },
     {
       "group": "G8",
@@ -180,7 +215,12 @@
           "mean": 4.19,
           "std": 0.93
         }
-      }
+      },
+      "final_rank_order": 1,
+      "award_level": "gold",
+      "award_label": "جام طلایی",
+      "award_icon": "🏆",
+      "group_grade_percent": 30
     },
     {
       "group": "G9",
@@ -202,7 +242,12 @@
           "mean": 4.11,
           "std": 1.07
         }
-      }
+      },
+      "final_rank_order": 2,
+      "award_level": "gold",
+      "award_label": "جام طلایی",
+      "award_icon": "🏆",
+      "group_grade_percent": 30
     },
     {
       "group": "G10",
@@ -224,7 +269,12 @@
           "mean": 4.26,
           "std": 1.01
         }
-      }
+      },
+      "final_rank_order": 7,
+      "award_level": "silver",
+      "award_label": "جام نقره‌ای",
+      "award_icon": "🥈",
+      "group_grade_percent": 25
     },
     {
       "group": "G11",
@@ -246,7 +296,12 @@
           "mean": 3.67,
           "std": 0.85
         }
-      }
+      },
+      "final_rank_order": 13,
+      "award_level": "basic",
+      "award_label": "بدون جام",
+      "award_icon": "",
+      "group_grade_percent": 15
     },
     {
       "group": "G12",
@@ -268,7 +323,12 @@
           "mean": 4.05,
           "std": 0.98
         }
-      }
+      },
+      "final_rank_order": 8,
+      "award_level": "silver",
+      "award_label": "جام نقره‌ای",
+      "award_icon": "🥈",
+      "group_grade_percent": 25
     },
     {
       "group": "G13",
@@ -290,7 +350,12 @@
           "mean": 4.15,
           "std": 0.89
         }
-      }
+      },
+      "final_rank_order": 10,
+      "award_level": "bronze",
+      "award_label": "جام برنزی",
+      "award_icon": "🥉",
+      "group_grade_percent": 20
     },
     {
       "group": "G14",
@@ -312,7 +377,12 @@
           "mean": 4.09,
           "std": 0.91
         }
-      }
+      },
+      "final_rank_order": 5,
+      "award_level": "silver",
+      "award_label": "جام نقره‌ای",
+      "award_icon": "🥈",
+      "group_grade_percent": 25
     },
     {
       "group": "G15",
@@ -334,7 +404,12 @@
           "mean": 4.05,
           "std": 1.03
         }
-      }
+      },
+      "final_rank_order": 4,
+      "award_level": "gold",
+      "award_label": "جام طلایی",
+      "award_icon": "🏆",
+      "group_grade_percent": 30
     },
     {
       "group": "G16",
@@ -356,7 +431,12 @@
           "mean": 3.51,
           "std": 1.07
         }
-      }
+      },
+      "final_rank_order": 16,
+      "award_level": "basic",
+      "award_label": "بدون جام",
+      "award_icon": "",
+      "group_grade_percent": 15
     }
   ]
 }
