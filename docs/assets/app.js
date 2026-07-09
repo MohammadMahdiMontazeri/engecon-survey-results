@@ -87,7 +87,7 @@ async function initIndividual() {
           <td>${row.own_group || "—"}</td>
           ${gCells}
           <td><strong>${fmt.format(row.participation_count)}</strong></td>
-          <td><span class="grade-pill">${fmt.format(row.participation_grade_percent)}٪</span></td>
+          <td><span class="grade-pill">${fmt.format(row.participation_grade_percent)}</span></td>
         </tr>
       `);
     }
@@ -100,7 +100,7 @@ async function initIndividual() {
       <th>گروه فرد</th>
       ${groups.map(g => `<th>${g}</th>`).join("")}
       <th>تعداد مشارکت</th>
-      <th>نمره مشارکت از ۳۰٪</th>
+      <th>نمره مشارکت از ۳۰</th>
     </tr>
   `;
 
@@ -282,7 +282,7 @@ async function initIndividual() {
           <td>${row.own_group || "—"}</td>
           ${gCells}
           <td><strong>${fmt.format(row.participation_count)}</strong></td>
-          <td><span class="grade-pill">${fmt.format(row.participation_grade_percent)}٪</span></td>
+          <td><span class="grade-pill">${fmt.format(row.participation_grade_percent)}</span></td>
         </tr>
       `);
     }
@@ -295,7 +295,7 @@ async function initIndividual() {
       <th>گروه فرد</th>
       ${groups.map(g => `<th>${g}</th>`).join("")}
       <th>تعداد مشارکت</th>
-      <th>نمره مشارکت از ۳۰٪</th>
+      <th>نمره مشارکت از ۳۰</th>
     </tr>
   `;
 
@@ -607,7 +607,7 @@ function groupGradeHTMLV7(row) {
     return `<span class="final-grade-pill">—</span>`;
   }
 
-  return `<span class="final-grade-pill">${fmt.format(Number(grade))}٪</span>`;
+  return `<span class="final-grade-pill">${fmt.format(Number(grade))}</span>`;
 }
 
 function getMetricMeanV7(row, metricKey) {
@@ -634,11 +634,6 @@ function statBlockV7(indicator) {
   `;
 }
 
-/*
-  نسخه اصلاح‌شده جدول نتایج گروهی:
-  در حالت RTL، ستون‌هایی که در انتهای HTML می‌آیند، در سمت چپ جدول دیده می‌شوند.
-  بنابراین جایگاه و نمره گروهی بعد از سه شاخص آمده‌اند.
-*/
 async function initGroupStats() {
   setupLogo();
 
@@ -690,7 +685,7 @@ async function initGroupStats() {
 
           <th>
             <button class="sort-head" data-sort="final_grade">
-              نمره گروهی از ۳۰٪ <span class="sort-icon">↕</span>
+              نمره گروهی از ۲۵ <span class="sort-icon">↕</span>
             </button>
           </th>
         </tr>
@@ -815,5 +810,3 @@ async function initGroupStats() {
 
   render();
 }
-
-// PATCH_V7_GROUP_FINAL_LAYOUT_END
