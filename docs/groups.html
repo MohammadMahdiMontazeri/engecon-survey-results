@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نتایج گروهی</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo">SUT</div>
+      <span>نتایج پروژه اقتصاد مهندسی</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="individual.html">نمرات فردی</a>
+      <a href="groups.html">نتایج گروهی</a>
+      <a href="comments.html">نقاط قوت و ضعف</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="section">
+    <div class="container center-shell">
+      <div class="card">
+        <h1>نتایج و نمرات گروهی</h1>
+
+        <div class="actions">
+          <a class="btn" href="comments.html">مشاهده نقاط قوت و ضعف گروه‌ها</a>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>گروه</th>
+                <th>اتکا به داده‌های واقعی</th>
+                <th>کیفیت ارائه و کار تیمی</th>
+                <th>قدرت متقاعدسازی و ارزیابی کلی</th>
+              </tr>
+            </thead>
+            <tbody id="statsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script>initGroupStats();</script>
+</body>
+</html>

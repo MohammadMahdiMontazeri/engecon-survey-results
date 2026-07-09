@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نمرات فردی</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="logo">SUT</div>
+      <span>نتایج پروژه اقتصاد مهندسی</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="individual.html">نمرات فردی</a>
+      <a href="groups.html">نتایج گروهی</a>
+      <a href="comments.html">نقاط قوت و ضعف</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="section">
+    <div class="container center-shell">
+      <div class="card">
+        <h1>نمرات فردی مشارکت در نظرسنجی‌ها</h1>
+
+        <div class="search-box">
+          <input id="studentSearch" type="search" placeholder="جستجوی شماره دانشجویی..." inputmode="numeric">
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead id="individualHeader"></thead>
+            <tbody id="individualBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script>initIndividual();</script>
+</body>
+</html>

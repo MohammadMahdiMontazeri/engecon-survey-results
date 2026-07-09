@@ -1,0 +1,20 @@
+# ===== Private survey project files - do not publish =====
+*.csv
+*.xlsx
+*.xls
+*.ipynb_checkpoints/
+EngEcon_Project.pdf
+01_raw_reference/
+01_raw_and_reference/
+02_survey_csvs/
+03_final_analysis_outputs/
+03_analysis_outputs/
+04_audit_confirmed_not_applied/
+04_checks_and_backups/
+05_checks_and_backups/
+99_legacy_ignore/
+
+# Public GitHub Pages output
+!docs/
+!docs/**
+# ===== End private survey project files =====

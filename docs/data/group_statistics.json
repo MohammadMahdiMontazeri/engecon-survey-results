@@ -1,0 +1,362 @@
+{
+  "generated_at": "2026-07-08 23:07:22",
+  "indicators": {
+    "data_real": "اتکا به داده‌های واقعی",
+    "presentation_quality": "کیفیت ارائه و کار تیمی",
+    "persuasion": "قدرت متقاعدسازی و ارزیابی کلی"
+  },
+  "rows": [
+    {
+      "group": "G1",
+      "group_number": 1,
+      "topic": "باشگاه بدنسازی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.27,
+          "std": 0.93
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.0,
+          "std": 1.04
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.15,
+          "std": 0.89
+        }
+      }
+    },
+    {
+      "group": "G2",
+      "group_number": 2,
+      "topic": "برشته‌کاری (رستری) برای فروش قهوه",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.42,
+          "std": 0.91
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.7,
+          "std": 1.08
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.96,
+          "std": 1.06
+        }
+      }
+    },
+    {
+      "group": "G3",
+      "group_number": 3,
+      "topic": "اپلیکیشن برنامه ریزی درسی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.6,
+          "std": 1.0
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.86,
+          "std": 1.14
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.74,
+          "std": 0.92
+        }
+      }
+    },
+    {
+      "group": "G4",
+      "group_number": 4,
+      "topic": "کافی شاپ",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.81,
+          "std": 1.01
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.83,
+          "std": 1.04
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.92,
+          "std": 1.04
+        }
+      }
+    },
+    {
+      "group": "G5",
+      "group_number": 5,
+      "topic": "مرکز اجاره اسباب بازی کودکان",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.66,
+          "std": 0.98
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.6,
+          "std": 1.15
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.64,
+          "std": 1.08
+        }
+      }
+    },
+    {
+      "group": "G6",
+      "group_number": 6,
+      "topic": "ایستگاه شارژ خودروهای برقی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.96,
+          "std": 0.95
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.39,
+          "std": 0.91
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.62,
+          "std": 1.05
+        }
+      }
+    },
+    {
+      "group": "G7",
+      "group_number": 7,
+      "topic": "فروش زعفران",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.04,
+          "std": 0.95
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.42,
+          "std": 0.8
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.96,
+          "std": 0.97
+        }
+      }
+    },
+    {
+      "group": "G8",
+      "group_number": 8,
+      "topic": "اپلیکیشن برنامه‌ریزی هوشمند سفر",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.2,
+          "std": 0.9
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.26,
+          "std": 0.83
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.19,
+          "std": 0.93
+        }
+      }
+    },
+    {
+      "group": "G9",
+      "group_number": 9,
+      "topic": "مجموعه ورزشی پدل",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.25,
+          "std": 1.01
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.2,
+          "std": 1.07
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.11,
+          "std": 1.07
+        }
+      }
+    },
+    {
+      "group": "G10",
+      "group_number": 10,
+      "topic": "خدمات چاپ سه‌بعدی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.11,
+          "std": 0.86
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.84,
+          "std": 1.0
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.26,
+          "std": 1.01
+        }
+      }
+    },
+    {
+      "group": "G11",
+      "group_number": 11,
+      "topic": "رستوران",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.83,
+          "std": 0.91
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.61,
+          "std": 0.94
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.67,
+          "std": 0.85
+        }
+      }
+    },
+    {
+      "group": "G12",
+      "group_number": 12,
+      "topic": "پلتفرم آنلاین طراحی و سفارش اقلام چاپی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.29,
+          "std": 0.95
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.88,
+          "std": 1.06
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.05,
+          "std": 0.98
+        }
+      }
+    },
+    {
+      "group": "G13",
+      "group_number": 13,
+      "topic": "نیروگاه خورشیدی",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.92,
+          "std": 0.84
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.94,
+          "std": 1.11
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.15,
+          "std": 0.89
+        }
+      }
+    },
+    {
+      "group": "G14",
+      "group_number": 14,
+      "topic": "باشگاه ورزشی چندمنظوره",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.2,
+          "std": 0.89
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.04,
+          "std": 0.96
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.09,
+          "std": 0.91
+        }
+      }
+    },
+    {
+      "group": "G15",
+      "group_number": 15,
+      "topic": "فروشگاه آنلاین ساعت و عینک",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 4.26,
+          "std": 0.94
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 4.12,
+          "std": 0.91
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 4.05,
+          "std": 1.03
+        }
+      }
+    },
+    {
+      "group": "G16",
+      "group_number": 16,
+      "topic": "کامپوزیت فضا",
+      "indicators": {
+        "data_real": {
+          "label": "اتکا به داده‌های واقعی",
+          "mean": 3.55,
+          "std": 1.12
+        },
+        "presentation_quality": {
+          "label": "کیفیت ارائه و کار تیمی",
+          "mean": 3.63,
+          "std": 1.02
+        },
+        "persuasion": {
+          "label": "قدرت متقاعدسازی و ارزیابی کلی",
+          "mean": 3.51,
+          "std": 1.07
+        }
+      }
+    }
+  ]
+}
